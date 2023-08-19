@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "DOM Overlay Extension",
+  "version": "1.0",
+  "description": "Display overlay text on elements with a specific class.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://iachara.com/char/edit/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
